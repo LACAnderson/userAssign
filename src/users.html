@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html>
+    
 <head>
-    <title>User information for {{htmluname}}</title>
+    <meta charset=utf8>
+    <link rel=stylesheet href="/static/users.css">
 </head>
+
 <body>
 
-<hr><br>
+    <p class="topp">
+        User information for {{htmluname}}
+    </p>
+    
+    <img src = {{htmlpic}}>
+    <br>
 
-Real Name: {{htmlrealName}}
-<div style="border: 1px solid magenta;">
-Date of Birth: {{htmlDOB}}
-<div style="border: 1px solid magenta;">
-Email: {{htmlemail}}
+    <h1>Real Name: </h1><h2>{{htmlrealName}}</h2>
+    
+    <h1>Date of Birth: </h1><h2>{{htmlDOB}}</h2>
+    
+    <h1>Email: </h1><h2>{{htmlemail}}</h2>
 
-<hr><br>
-</div>
+  
+    
+
 
 </body>
 </html>

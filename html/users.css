@@ -1,0 +1,38 @@
+
+body
+{
+    background-color: blanchedalmond;
+}
+
+p.topp 
+{
+    text-align-last: center;
+    padding-top: 3px;
+    padding-bottom: 2px;
+    font-size: 35px;
+    color: black;
+    text-shadow: 2px 2px 5px gold;
+    text-decoration-line: underline;
+}
+
+h1
+{
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 150px;
+}
+h2
+{
+    font-weight: lighter;
+    font-size: 25px;
+    margin-left: 200px;
+}
+
+img 
+{
+    float:right;
+    padding-right: 150px;
+    width: 25%;
+    height: 25%;
+
+}
