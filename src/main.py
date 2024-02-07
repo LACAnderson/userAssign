@@ -3,6 +3,8 @@ import tornado.web
 import Index
 import users
 import os
+import updates
+import sock
 
 HTMLDIR = os.path.abspath(
     os.path.join(os.path.dirname(__file__),
@@ -13,7 +15,9 @@ HTMLDIR = os.path.abspath(
 def makeApp():
     endpoints=[
         ("/",Index.Handler),
-        ("/profile/.*", users.AccHandler)
+        ("/profile/.*", users.AccHandler),
+        ("/updates",updates.UpHandler),
+        ("/sock", sock.sockHandler)
     ]
     app = tornado.web.Application(
         endpoints, static_path=HTMLDIR
